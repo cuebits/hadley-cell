@@ -82,11 +82,8 @@ m12 <- sens.slope(dec)
 slopes <- c(m1$b.sen, m2$b.sen,	m3$b.sen, m4$b.sen, m5$b.sen, m6$b.sen, m7$b.sen, m8$b.sen, m9$b.sen, m10$b.sen, m11$b.sen, m12$b.sen)
 
 # Defines vector of intercepts for each month series
-int <- c(m1$intercept, m2$intercept, m3$intercept, m4$intercept,	
-	m5$intercept, m6$intercept, m7$intercept, m8$intercept,
-	m9$intercept, m10$intercept, m11$intercept, m12$intercept)
-nor <- c(m1$nobs, m2$nobs, m3$nobs, m4$nobs, m5$nobs,m6$nobs,
-	m7$nobs, m8$nobs, m9$nobs, m10$nobs, m11$nobs, m12$nobs)
+int <- c(m1$intercept, m2$intercept, m3$intercept, m4$intercept, m5$intercept, m6$intercept, m7$intercept, m8$intercept, m9$intercept, m10$intercept, m11$intercept, m12$intercept)
+nor <- c(m1$nobs, m2$nobs, m3$nobs, m4$nobs, m5$nobs,m6$nobs, m7$nobs, m8$nobs, m9$nobs, m10$nobs, m11$nobs, m12$nobs)
 
 # Run M-K tests
 mk1 <- mk.test(jan)
