@@ -2,7 +2,7 @@
 require(trend)
 
 # Sets directory to load .csv file
-setwd("DIRECTORY TO FILE")							
+setwd("Data/test.txt")							
 
 # Reads csv/txt file with "null" values ifentified as missing data
 data <- read.csv("data.txt", header=FALSE, na.strings=c("null"))	
