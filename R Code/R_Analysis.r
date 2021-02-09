@@ -2,10 +2,10 @@
 require(trend)
 
 # Sets directory to load .csv file
-setwd("Data/test.txt")							
+setwd("D:/Repositories/hadley-cell/R Code/Data")							
 
 # Reads csv/txt file with "null" values ifentified as missing data
-data <- read.csv("data.txt", header=FALSE, na.strings=c("null"))	
+data <- read.csv("test.txt", header=FALSE, na.strings=c("null"))	
 
 # Insures data is read numerically and is not a list object
 data <- as.numeric(unlist(data))							
@@ -100,15 +100,15 @@ mk11 <- mk.test(nov)
 mk12 <- mk.test(dec)
 
 # Defines vectors for M-K test statistics
-S <- c(mk1$Sg, mk2$Sg, mk3$Sg, mk4$Sg, mk5$Sg, mk6$Sg, mk7$Sg, mk8$Sg, mk9$Sg, mk10$Sg, mk11$Sg, mk12$Sg)
+S <- c(mk1$estimates, mk2$estimates, mk3$estimates, mk4$estimates, mk5$estimates, mk6$estimates, mk7$estimates, mk8$estimates, mk9$estimates, mk10$estimates, mk11$estimates, mk12$estimates)
 varSg <- c(mk1$varSg, mk2$varSg, mk3$varSg, mk4$varSg, mk5$varSg, mk6$varSg, mk7$varSg, mk8$varSg, mk9$varSg, mk10$varSg, mk11$varSg, mk12$varSg)
 Zg <- c(mk1$Zg, mk2$Zg, mk3$Zg, mk4$Zg, mk5$Zg, mk6$Zg, mk7$Zg, mk8$Zg, mk9$Zg, mk10$Zg, mk11$Zg, mk12$Zg)
 pvalg <- c(mk1$pvalg, mk2$pvalg, mk3$pvalg, mk4$pvalg, mk5$pvalg, mk6$pvalg, mk7$pvalg, mk8$pvalg, mk9$pvalg, mk10$pvalg, mk11$pvalg, mk12$pvalg)
 
 # Transposes vectors for easy copying
-S <- t(S)											
-varSg <- t(varSg)
-Zg <- t(Zg)
+#S <- t(S)											
+#varSg <- t(varSg)
+#Zg <- t(Zg)
 pvalg <- t(pvalg)
 
 # Prints vectors
