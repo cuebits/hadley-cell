@@ -106,9 +106,9 @@ Zg <- c(mk1$Zg, mk2$Zg, mk3$Zg, mk4$Zg, mk5$Zg, mk6$Zg, mk7$Zg, mk8$Zg, mk9$Zg, 
 pvalg <- c(mk1$pvalg, mk2$pvalg, mk3$pvalg, mk4$pvalg, mk5$pvalg, mk6$pvalg, mk7$pvalg, mk8$pvalg, mk9$pvalg, mk10$pvalg, mk11$pvalg, mk12$pvalg)
 
 # Transposes vectors for easy copying
-#S <- t(S)											
-#varSg <- t(varSg)
-#Zg <- t(Zg)
+S <- t(S)											
+varSg <- t(varSg)
+Zg <- t(Zg)
 pvalg <- t(pvalg)
 
 # Prints vectors
