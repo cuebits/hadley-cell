@@ -5,10 +5,12 @@ import geopandas
 import smoomapy
 import json
 import datetime
+import os
 
 from shapely.geometry import Point
 
-mk_significance_alpha = 0.05
+mk_significance_alpha = 0.1
+output_dir = os.getcwd() + "\outputs\\"
 
 def main():
 
@@ -33,14 +35,14 @@ def main():
     # Iterate for each station in the data frame
     for label, content in data_frame.iteritems():
         
-        # If input file has lat/lon rows, drop the two rows
-        if True:
-            coor_dataframe[label] = content[0, 1]
-            content = content.drop(index = [0, 1])
-
         # Skip the dates column
         if label == "Date":
             continue
+
+        # If input file has lat/lon rows, drop the two rows
+        if True:
+            coor_dataframe[label] = [content.iloc[0], content.iloc[1]]
+            content = content.drop(index = [0, 1])
 
         # Convert the column to a time series
         content = pandas.Series(content.values, index = dates)
@@ -50,7 +52,8 @@ def main():
         monthly_array = numpy.reshape(monthly_array, (-1, 12)).T    # Reshape to 12 x N, then transpose so each array index corresponds with a month
 
         # Create temporary columns for storing into the new data frame
-        sens_temp, mk_temp = []
+        sens_temp = []
+        mk_temp = []
 
         # For each column in the array, run the tests
         for month in monthly_array:
@@ -78,11 +81,13 @@ def main():
 
     file_time = datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
 
-    sens_dataframe.T.to_csv("sens_" + file_time + ".csv")
-    mk_dataframe.T.to_csv("mk_" + file_time + ".csv")
-    coor_dataframe.T.to_csv("coordinates_" + file_time + ".csv")
-    
+    if not os.path.exists(output_dir):
+        os.mkdir(output_dir)
 
+    sens_dataframe.T.to_csv(output_dir + "sens_" + file_time + ".csv")
+    mk_dataframe.T.to_csv(output_dir + "mk_" + file_time + ".csv")
+    coor_dataframe.T.to_csv(output_dir + "coordinates_" + file_time + ".csv")
+    
 
 # Function for the tests to be conducted over each data series
 def run_tests(data, alpha):
@@ -91,7 +96,6 @@ def run_tests(data, alpha):
     mk_test = pymannkendall.original_test(data, alpha=alpha)
 
     return slope_test, mk_test
-
 
 
 main()
