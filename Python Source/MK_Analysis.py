@@ -87,6 +87,9 @@ def main():
     sens_dataframe.T.to_csv(output_dir + "sens_" + file_time + ".csv")
     mk_dataframe.T.to_csv(output_dir + "mk_" + file_time + ".csv")
     coor_dataframe.T.to_csv(output_dir + "coordinates_" + file_time + ".csv")
+
+    gfd = df_to_gfd(coor_dataframe)
+    print(gfd)
     
 
 # Function for the tests to be conducted over each data series
@@ -96,6 +99,12 @@ def run_tests(data, alpha):
     mk_test = pymannkendall.original_test(data, alpha=alpha)
 
     return slope_test, mk_test
+
+# Convert dataframe with latitude and longitude columns to GeoDataFrame
+def df_to_gfd(inputdf):
+    df = inputdf.copy()
+    geometry = [Point(xy) for xy in zip(df["Longitude"], df["Latitude"])]
+    return geopandas.GeoDataFrame(df, geometry=geometry, crs=4326)
 
 
 main()
