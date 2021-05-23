@@ -196,6 +196,8 @@ def main():
 
         i += 1
 
+    input("Press any key to continue...")
+
 
 # Function for the tests to be conducted over each data series
 def run_tests(data, alpha):

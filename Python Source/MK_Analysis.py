@@ -1,34 +1,18 @@
-import matplotlib
 import pymannkendall
 import numpy
 import pandas
 import geopandas
 import smoomapy
-import math
+import json
 import datetime
 import os
-import matplotlib.pyplot as plt
-import matplotlib
 
 from shapely.geometry import Point
-from mpl_toolkits.axes_grid1 import make_axes_locatable
-from smoomapy.core import make_dist_mat
 
-
+mk_significance_alpha = 0.1
+output_dir = os.getcwd() + "\outputs\\"
 
 def main():
-
-    # Define constants
-    mk_significance_alpha = 0.1
-    output_dir = os.getcwd() + "\outputs\\"
-    coords_in_file = True
-    
-    # Set file names and output files
-    file_time = datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
-    output_dir += file_time + "\\"
-    if not os.path.exists(output_dir):
-        os.mkdir(output_dir)
-
 
     # Read CSV file into a pandas data frame 
     data_frame = pandas.read_csv("US_Data.csv", sep=",")
@@ -37,7 +21,7 @@ def main():
     dates = pandas.Series(data_frame["Date"])
 
     # If input file has latitude and longitude rows, remove from date column
-    if coords_in_file:
+    if True:
         dates = dates.drop(index = [0, 1])
     
     # Convert to a time series
@@ -46,8 +30,7 @@ def main():
     # Create new data frames for Sen's Slopes, M-K Tests, and Coordinates
     sens_dataframe = pandas.DataFrame()
     mk_dataframe = pandas.DataFrame()
-    if coords_in_file:
-        coor_dataframe = pandas.DataFrame()
+    coor_dataframe = pandas.DataFrame()
 
     # Iterate for each station in the data frame
     for label, content in data_frame.iteritems():
@@ -56,8 +39,8 @@ def main():
         if label == "Date":
             continue
 
-        # If input file has lat/lon rows, extract the two rows
-        if coords_in_file:
+        # If input file has lat/lon rows, drop the two rows
+        if True:
             coor_dataframe[label] = [content.iloc[0], content.iloc[1]]
             content = content.drop(index = [0, 1])
 
@@ -85,108 +68,29 @@ def main():
         mk_dataframe[label] = mk_temp
 
     # Set data frame indexes
-    sens_dataframe["Month"] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    sens_dataframe["Month"] = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     sens_dataframe = sens_dataframe.set_index("Month")
 
-    mk_dataframe["Month"] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    mk_dataframe["Month"] = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     mk_dataframe = mk_dataframe.set_index("Month")
 
-    if coords_in_file:
-        coor_dataframe["Coordinate"] = ["Latitude", "Longitude"]
-        coor_dataframe = coor_dataframe.set_index("Coordinate")
+    coor_dataframe["Coordinate"] = ["Latitude", "Longitude"]
+    coor_dataframe = coor_dataframe.set_index("Coordinate")
 
-    
-    ######## Output data analysis files
+    # Set file names and output files
+
+    file_time = datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
+
+    if not os.path.exists(output_dir):
+        os.mkdir(output_dir)
+
     sens_dataframe.T.to_csv(output_dir + "sens_" + file_time + ".csv")
     mk_dataframe.T.to_csv(output_dir + "mk_" + file_time + ".csv")
-    #coor_dataframe.T.to_csv(output_dir + "coordinates_" + file_time + ".csv") [No need for this one at the moment]
+    coor_dataframe.T.to_csv(output_dir + "coordinates_" + file_time + ".csv")
+
+    gfd = df_to_gfd(coor_dataframe)
+    print(gfd)
     
-    ######## Output station location plot
-    # Temp set extents of map. [TAKE INPUT LATER]
-    axis_buffer = 5
-    minx, miny, maxx, maxy = min(coor_dataframe.loc["Longitude", :]) - axis_buffer, min(coor_dataframe.loc["Latitude", :]) - axis_buffer, max(coor_dataframe.loc["Longitude", :]) + axis_buffer, max(coor_dataframe.loc["Latitude", :]) + axis_buffer
-
-    # Temp extents
-    minx, miny, maxx, maxy = -130, 22.5, -65, 55
-
-    # Axes subplots
-    ax = plt.subplot()
-    ax.set_xlim(minx, maxx)
-    ax.set_ylim(miny, maxy)
-    ax.set_facecolor("#d1e0e6")
-
-    world = geopandas.read_file(geopandas.datasets.get_path('naturalearth_lowres'))
-    us_states = geopandas.read_file("GISData\\cb_2018_us_state_500k.shp")
-    us_states = us_states[(us_states.NAME!="Alaska")]
-    water = geopandas.read_file("GISData\\World_Lakes.shp")
-
-    gfd = df_to_gfd(coor_dataframe, coor_dataframe, 4326)
-
-    gfd.plot(ax=ax, color="k", markersize=3, zorder=100)
-    us_states.plot(ax=ax, color="#f5f1e9", zorder=2)
-    water.plot(ax=ax, color="#d1e0e6", zorder=3)
-    world.plot(ax=ax, color="#c6cccf", zorder=1)
-
-    plt.title(label="RAINFALL STATION LOCATIONS")
-    plt.savefig(output_dir + "stat_loc_" + file_time + ".png", dpi=600)
-
-    ####### Work out IDW maps
-
-    # Prepare GeoDataFrame for Sen's Slopes
-    sens_gdf = sens_dataframe.T.copy()
-    sens_gdf["Latitude"] = coor_dataframe.loc["Latitude", :]
-    sens_gdf["Longitude"] = coor_dataframe.loc["Longitude", :]
-    sens_gdf = geopandas.GeoDataFrame(sens_gdf, geometry=geopandas.points_from_xy(sens_gdf.Longitude, sens_gdf.Latitude))
-
-    # Define precision of IDW contours
-    num_breaks = 100
-    breaks_min = round((min(sens_dataframe.min())), ndigits=3)
-    breaks_max = round((max(sens_dataframe.max())), ndigits=3)
-    plot_breaks = numpy.linspace(breaks_min, breaks_max, num_breaks)    
-
-    for month, slopes in sens_gdf.iteritems():
-        
-        # Skip non-month columns
-        if month == "Latitude" or month == "Longitude" or month == "geometry":
-            continue
-        
-        # Create new geodataframe for each month
-        month_gdf = geopandas.GeoDataFrame(slopes, geometry=geopandas.points_from_xy(sens_gdf.Longitude, sens_gdf.Latitude))
-        
-        # Perform IDW functions
-        idw = smoomapy.SmoothIdw(month_gdf, month, 1, nb_pts=20000, mask=us_states)
-        res = idw.render(nb_class=num_breaks, user_defined_breaks=plot_breaks, disc_func="equal_interval", output="GeoDataFrame")
-
-        #divider = make_axes_locatable(ax)
-        #cax = divider.append_axes("right", size="5%", pad=0.1)
-
-        # Reset figure
-        plt.figure()
-        fig, ax = plt.subplots()
-
-        ax.set_xlim(minx, maxx)
-        ax.set_ylim(miny, maxy)
-        ax.set_facecolor("#d1e0e6")
-
-        gfd.plot(ax=ax, color="k", markersize=3, zorder=100)
-        us_states.plot(ax=ax, color="#f5f1e9", zorder=2)
-        water.plot(ax=ax, color="#d1e0e6", zorder=3)
-        world.plot(ax=ax, color="#c6cccf", zorder=1)
-
-        res.plot(ax=ax, cmap="RdBu", column="center", linewidth=0.1, zorder=99, legend=False)
-
-        # Create normalised colour bar
-        norm = matplotlib.colors.TwoSlopeNorm(vmin=breaks_min, vcenter=0, vmax=breaks_max)
-        cbar = plt.cm.ScalarMappable(norm=norm, cmap="RdBu")
-        fig.colorbar(cbar, ax=ax)
-
-        plt.title(label=month + " Sens's Slopes")
-        plt.savefig(output_dir + month + "_sens_" + file_time + ".png", dpi=600)
-
-        plt.close()
-
-        # HOLD POINT
-
 
 # Function for the tests to be conducted over each data series
 def run_tests(data, alpha):
@@ -196,13 +100,11 @@ def run_tests(data, alpha):
 
     return slope_test, mk_test
 
-
 # Convert dataframe with latitude and longitude columns to GeoDataFrame
-def df_to_gfd(inputdf, coor_df, crs):
-    df = inputdf.T
-    coor_df = coor_df.T
-    geometry = [Point(xy) for xy in zip(coor_df.loc[:, "Longitude"], coor_df.loc[:, "Latitude"])]
-    return geopandas.GeoDataFrame(df, geometry=geometry, crs=crs)
+def df_to_gfd(inputdf):
+    df = inputdf.copy()
+    geometry = [Point(xy) for xy in zip(df["Longitude"], df["Latitude"])]
+    return geopandas.GeoDataFrame(df, geometry=geometry, crs=4326)
 
 
 main()
