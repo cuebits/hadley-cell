@@ -13,7 +13,7 @@ from datetime import datetime
 def main():
 
     # Initialise variables and set working directory
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    os.chdir(os.path.dirname(os.path.abspath(__file__)) + "\..")
     output_dir = os.getcwd() + "\outputs\\"
 
     try:
