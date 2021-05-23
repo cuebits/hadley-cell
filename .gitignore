@@ -38,9 +38,12 @@ Thumbs.db
 
 # Directories #
 ###############
-
 /.vscode
 /EXE Gen
 /Misc
 /outputs
 /QGIS
+
+# Other Files #
+###############
+*.qgz
