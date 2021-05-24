@@ -107,7 +107,7 @@ def main():
     #coor_dataframe.T.to_csv(output_dir + "coordinates_" + file_time + ".csv") [No need for this one at the moment]
     
     if not coords_in_file:
-        print("Analysis CSV files generated in output folder. No coordinates in file to generate map plots. Program will now exit.")
+        input("Analysis CSV files generated in output folder. No coordinates in file to generate map plots. Press any key to exit.")
         return 101
 
     ######## Output station location plot
