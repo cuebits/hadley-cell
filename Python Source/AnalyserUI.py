@@ -16,6 +16,8 @@ def main():
     os.chdir(os.path.dirname(os.path.abspath(__file__)) + "\..")
     output_dir = os.getcwd() + "\outputs\\"
 
+    print(os.getcwd())
+
     try:
         mk_significance_alpha = float(input("Enter significance alpha (default = 0.05): "))
     except ValueError:
@@ -107,7 +109,8 @@ def main():
     #coor_dataframe.T.to_csv(output_dir + "coordinates_" + file_time + ".csv") [No need for this one at the moment]
     
     if not coords_in_file:
-        input("Analysis CSV files generated in output folder. No coordinates in file to generate map plots. Press any key to exit.")
+        input("Analysis CSV files generated in output folder. No coordinates in file to generate map plots.")
+        os.system("pause")
         return 101
 
     ######## Output station location plot
@@ -116,7 +119,7 @@ def main():
     minx, miny, maxx, maxy = min(coor_dataframe.loc["Longitude", :]) - axis_buffer, min(coor_dataframe.loc["Latitude", :]) - axis_buffer, max(coor_dataframe.loc["Longitude", :]) + axis_buffer, max(coor_dataframe.loc["Latitude", :]) + axis_buffer
 
     # Temp extents
-    minx, miny, maxx, maxy = -130, 22.5, -65, 55
+    # minx, miny, maxx, maxy = -130, 22.5, -65, 55
 
     # Axes subplots
     ax = plt.subplot()
@@ -124,14 +127,21 @@ def main():
     ax.set_ylim(miny, maxy)
     ax.set_facecolor("#d1e0e6")
 
-    world = geopandas.read_file(geopandas.datasets.get_path('naturalearth_lowres'))
+    world = geopandas.read_file("GISData\\ne_10m_admin_0_countries.shp") # geopandas.datasets.get_path('naturalearth_lowres')
     us_states = geopandas.read_file("GISData\\cb_2018_us_state_500k.shp")
-    us_states = us_states[(us_states.NAME!="Alaska")]
+    mask = us_states[(us_states.NAME!="Alaska")]
+
+    world.to_csv("output.csv")
+
+    country = input("Enter country of analysis: ")
+
+    mask = world[(world.SOVEREIGNT==country)]
+
     water = geopandas.read_file("GISData\\World_Lakes.shp")
 
-    gfd = df_to_gfd(coor_dataframe, coor_dataframe, 4326)
+    gdf = df_to_gfd(coor_dataframe, coor_dataframe, 4326)
 
-    gfd.plot(ax=ax, color="k", markersize=3, zorder=100)
+    gdf.plot(ax=ax, color="k", markersize=3, zorder=100)
     us_states.plot(ax=ax, color="#f5f1e9", zorder=2)
     water.plot(ax=ax, color="#d1e0e6", zorder=3)
     world.plot(ax=ax, color="#c6cccf", zorder=1)
@@ -148,9 +158,9 @@ def main():
     sens_gdf = geopandas.GeoDataFrame(sens_gdf, geometry=geopandas.points_from_xy(sens_gdf.Longitude, sens_gdf.Latitude))
 
     # Define precision of IDW contours
-    num_breaks = 100
-    breaks_min = round((min(sens_dataframe.min())), ndigits=3)
-    breaks_max = round((max(sens_dataframe.max())), ndigits=3)
+    num_breaks = 200
+    breaks_min = -4 #round((min(sens_dataframe.min())), ndigits=3)
+    breaks_max = 4 #round((max(sens_dataframe.max())), ndigits=3)
     plot_breaks = linspace(breaks_min, breaks_max, num_breaks)    
 
     i = 1 # For file naming, keeps months in chronological order, not alphabetical 
@@ -164,7 +174,7 @@ def main():
         month_gdf = geopandas.GeoDataFrame(slopes, geometry=geopandas.points_from_xy(sens_gdf.Longitude, sens_gdf.Latitude))
         
         # Perform IDW functions
-        idw = smoomapy.SmoothIdw(month_gdf, month, 1, nb_pts=20000, mask=us_states)
+        idw = smoomapy.SmoothIdw(month_gdf, month, 1, nb_pts=20000, mask=mask)
         res = idw.render(nb_class=num_breaks, user_defined_breaks=plot_breaks, disc_func="equal_interval", output="GeoDataFrame")
 
         #divider = make_axes_locatable(ax)
@@ -178,7 +188,7 @@ def main():
         ax.set_ylim(miny, maxy)
         ax.set_facecolor("#d1e0e6")
 
-        gfd.plot(ax=ax, color="k", markersize=3, zorder=100)
+        gdf.plot(ax=ax, color="k", markersize=3, zorder=100, alpha=0.2)
         us_states.plot(ax=ax, color="#f5f1e9", zorder=2)
         water.plot(ax=ax, color="#d1e0e6", zorder=3)
         world.plot(ax=ax, color="#c6cccf", zorder=1)
@@ -196,7 +206,7 @@ def main():
 
         i += 1
 
-    input("Press any key to continue...")
+    os.system("pause")
 
 
 # Function for the tests to be conducted over each data series
