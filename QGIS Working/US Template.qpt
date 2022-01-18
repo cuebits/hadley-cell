@@ -1,0 +1,638 @@
+<Layout units="mm" worldFileMap="{2a904ec0-e2e3-4763-b706-df94d592886e}" name="US Short Term" printResolution="300">
+ <Snapper tolerance="5" snapToGrid="0" snapToGuides="1" snapToItems="1"/>
+ <Grid offsetX="0" resUnits="mm" offsetUnits="mm" resolution="5" offsetY="0"/>
+ <PageCollection>
+  <symbol type="fill" clip_to_extent="1" force_rhr="0" name="" alpha="1">
+   <layer class="SimpleFill" locked="0" pass="0" enabled="1">
+    <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+    <prop v="255,255,255,255" k="color"/>
+    <prop v="miter" k="joinstyle"/>
+    <prop v="0,0" k="offset"/>
+    <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+    <prop v="MM" k="offset_unit"/>
+    <prop v="35,35,35,255" k="outline_color"/>
+    <prop v="no" k="outline_style"/>
+    <prop v="0.26" k="outline_width"/>
+    <prop v="MM" k="outline_width_unit"/>
+    <prop v="solid" k="style"/>
+    <data_defined_properties>
+     <Option type="Map">
+      <Option value="" type="QString" name="name"/>
+      <Option name="properties"/>
+      <Option value="collection" type="QString" name="type"/>
+     </Option>
+    </data_defined_properties>
+   </layer>
+  </symbol>
+  <LayoutItem referencePoint="0" positionOnPage="0,0,mm" frameJoinStyle="miter" position="0,0,mm" size="297,210,mm" zValue="0" excludeFromExports="0" groupUuid="" blendMode="0" visibility="1" frame="false" uuid="{98ee7588-4977-4b14-832d-0a68074d0375}" positionLock="false" id="" type="65638" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{98ee7588-4977-4b14-832d-0a68074d0375}" opacity="1" background="true">
+   <FrameColor green="0" blue="0" alpha="255" red="0"/>
+   <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+   <LayoutObject>
+    <dataDefinedProperties>
+     <Option type="Map">
+      <Option value="" type="QString" name="name"/>
+      <Option name="properties"/>
+      <Option value="collection" type="QString" name="type"/>
+     </Option>
+    </dataDefinedProperties>
+    <customproperties/>
+   </LayoutObject>
+   <symbol type="fill" clip_to_extent="1" force_rhr="0" name="" alpha="1">
+    <layer class="SimpleFill" locked="0" pass="0" enabled="1">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="255,255,255,255" k="color"/>
+     <prop v="miter" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="no" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </LayoutItem>
+  <GuideCollection visible="1"/>
+ </PageCollection>
+ <LayoutItem labelText="October" marginX="0" referencePoint="0" positionOnPage="91.7682,184.38,mm" frameJoinStyle="miter" position="91.7682,184.38,mm" size="48.782,8.5627,mm" zValue="57" excludeFromExports="0" groupUuid="" blendMode="0" visibility="1" frame="false" uuid="{c9ba5b5b-abb4-4f13-840a-42c16a41d66f}" valign="32" positionLock="false" id="" htmlState="0" type="65641" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{c9ba5b5b-abb4-4f13-840a-42c16a41d66f}" opacity="1" marginY="0" background="false" halign="8">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem labelText="November" marginX="0" referencePoint="0" positionOnPage="174.349,184.38,mm" frameJoinStyle="miter" position="174.349,184.38,mm" size="48.782,8.5627,mm" zValue="56" excludeFromExports="0" groupUuid="" blendMode="0" visibility="1" frame="false" uuid="{dda87587-c0a2-4eca-a486-055c6febf10a}" valign="32" positionLock="false" id="" htmlState="0" type="65641" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{dda87587-c0a2-4eca-a486-055c6febf10a}" opacity="1" marginY="0" background="false" halign="8">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem labelText="July" marginX="0" referencePoint="0" positionOnPage="91.7682,143.314,mm" frameJoinStyle="miter" position="91.7682,143.314,mm" size="48.782,8.5627,mm" zValue="54" excludeFromExports="0" groupUuid="" blendMode="0" visibility="1" frame="false" uuid="{0f0aa085-00ec-4f62-a519-2eaf4fd44029}" valign="32" positionLock="false" id="" htmlState="0" type="65641" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{0f0aa085-00ec-4f62-a519-2eaf4fd44029}" opacity="1" marginY="0" background="false" halign="8">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem labelText="September" marginX="0" referencePoint="0" positionOnPage="8.4928,184.38,mm" frameJoinStyle="miter" position="8.4928,184.38,mm" size="48.782,8.5627,mm" zValue="53" excludeFromExports="0" groupUuid="" blendMode="0" visibility="1" frame="false" uuid="{43afbd2c-e075-402d-8e38-9cf33d0e708e}" valign="32" positionLock="false" id="" htmlState="0" type="65641" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{43afbd2c-e075-402d-8e38-9cf33d0e708e}" opacity="1" marginY="0" background="false" halign="8">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem labelText="August" marginX="0" referencePoint="0" positionOnPage="174.349,143.314,mm" frameJoinStyle="miter" position="174.349,143.314,mm" size="48.782,8.5627,mm" zValue="53" excludeFromExports="0" groupUuid="" blendMode="0" visibility="1" frame="false" uuid="{8610be3b-dd9a-4902-9477-43a28e26dd99}" valign="32" positionLock="false" id="" htmlState="0" type="65641" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{8610be3b-dd9a-4902-9477-43a28e26dd99}" opacity="1" marginY="0" background="false" halign="8">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem labelText="June" marginX="0" referencePoint="0" positionOnPage="8.48414,143.314,mm" frameJoinStyle="miter" position="8.48414,143.314,mm" size="48.782,8.5627,mm" zValue="50" excludeFromExports="0" groupUuid="" blendMode="0" visibility="1" frame="false" uuid="{9f8c3626-866f-43eb-a7da-eee26a017f63}" valign="32" positionLock="false" id="" htmlState="0" type="65641" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{9f8c3626-866f-43eb-a7da-eee26a017f63}" opacity="1" marginY="0" background="false" halign="8">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem labelText="January" marginX="0" referencePoint="0" positionOnPage="91.7509,61.5623,mm" frameJoinStyle="miter" position="91.7509,61.5623,mm" size="48.782,8.5627,mm" zValue="35" excludeFromExports="0" groupUuid="" blendMode="0" visibility="1" frame="false" uuid="{286991b9-8731-4535-aa2c-96dcc85db0d7}" valign="32" positionLock="false" id="" htmlState="0" type="65641" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{286991b9-8731-4535-aa2c-96dcc85db0d7}" opacity="1" marginY="0" background="false" halign="8">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem labelText="April" marginX="0" referencePoint="0" positionOnPage="91.7509,103,mm" frameJoinStyle="miter" position="91.7509,103,mm" size="48.782,8.5627,mm" zValue="34" excludeFromExports="0" groupUuid="" blendMode="0" visibility="1" frame="false" uuid="{0bc21ce6-7e1f-4607-ab2e-20e0039b93ca}" valign="32" positionLock="false" id="" htmlState="0" type="65641" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{0bc21ce6-7e1f-4607-ab2e-20e0039b93ca}" opacity="1" marginY="0" background="false" halign="8">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem labelText="May" marginX="0" referencePoint="0" positionOnPage="174.349,103,mm" frameJoinStyle="miter" position="174.349,103,mm" size="48.782,8.5627,mm" zValue="33" excludeFromExports="0" groupUuid="" blendMode="0" visibility="1" frame="false" uuid="{2ea3829b-963d-4b2f-af8a-3c89a00c228a}" valign="32" positionLock="false" id="" htmlState="0" type="65641" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{2ea3829b-963d-4b2f-af8a-3c89a00c228a}" opacity="1" marginY="0" background="false" halign="8">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem labelText="February" marginX="0" referencePoint="0" positionOnPage="174.349,62.0945,mm" frameJoinStyle="miter" position="174.349,62.0945,mm" size="48.782,8.5627,mm" zValue="31" excludeFromExports="0" groupUuid="" blendMode="0" visibility="1" frame="false" uuid="{aa62f2c5-b060-447e-9648-de1c97216794}" valign="32" positionLock="false" id="" htmlState="0" type="65641" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{aa62f2c5-b060-447e-9648-de1c97216794}" opacity="1" marginY="0" background="false" halign="8">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem labelText="March" marginX="0" referencePoint="0" positionOnPage="8.47548,103,mm" frameJoinStyle="miter" position="8.47548,103,mm" size="48.782,8.5627,mm" zValue="30" excludeFromExports="0" groupUuid="" blendMode="0" visibility="1" frame="false" uuid="{522dbb4f-46a6-46c8-b3d9-a2775ade3f54}" valign="32" positionLock="false" id="" htmlState="0" type="65641" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{522dbb4f-46a6-46c8-b3d9-a2775ade3f54}" opacity="1" marginY="0" background="false" halign="8">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem referencePoint="0" positionOnPage="8.47548,157.967,mm" frameJoinStyle="miter" position="8.47548,157.967,mm" size="76.3382,23.9854,mm" zValue="16" excludeFromExports="0" groupUuid="" blendMode="0" keepLayerSet="true" mapFlags="0" visibility="1" frame="false" uuid="{8dbdd4b2-6dd0-4af1-96f6-280aafa3d58d}" isTemporal="0" positionLock="false" id="" drawCanvasItems="true" followPresetName="" type="65639" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{8dbdd4b2-6dd0-4af1-96f6-280aafa3d58d}" opacity="1" mapRotation="0" followPreset="false" background="true" labelMargin="0,mm">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmin="-13452679.58843683078885078" ymin="3294703.90490137413144112" ymax="4860245.29357231222093105" xmax="-8470043.05333990044891834"/>
+  <LayerSet>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\AURecent.shp|layername=AURecent" provider="ogr" name="AURecent">AURecent_51f402de_1a0b_4128_b5f0_e51f2a2f5ed4</Layer>
+   <Layer source="D:/Repositories/hadley-cell/GIS Data/USShort9.tif" provider="gdal" name="USShort9">USShort9_676244f2_a60c_461f_8861_9bae4d453800</Layer>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\USRecent.shp|layername=USRecent" provider="ogr" name="USRecent">USRecent_b584bdd5_7433_4a87_91b9_67da7f529f4f</Layer>
+   <Layer source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dm%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=19&amp;zmin=0" provider="wms" name="Google Maps">Google_Maps_f5909963_ae29_4e43_ae24_47e05c29bedd</Layer>
+  </LayerSet>
+  <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+  <labelBlockingItems/>
+  <atlasClippingSettings clippingType="1" restrictLayers="0" enabled="0" forceLabelsInside="0">
+   <layersToClip/>
+  </atlasClippingSettings>
+  <itemClippingSettings clippingType="1" clipSource="" enabled="0" forceLabelsInside="0"/>
+ </LayoutItem>
+ <LayoutItem labelText="December" marginX="0" referencePoint="0" positionOnPage="8.47548,62.0945,mm" frameJoinStyle="miter" position="8.47548,62.0945,mm" size="48.782,8.5627,mm" zValue="15" excludeFromExports="0" groupUuid="" blendMode="0" visibility="1" frame="false" uuid="{b81920d0-42bc-4d7c-9d9c-bfb2e95ec851}" valign="32" positionLock="false" id="" htmlState="0" type="65641" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{b81920d0-42bc-4d7c-9d9c-bfb2e95ec851}" opacity="1" marginY="0" background="false" halign="8">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem referencePoint="0" positionOnPage="91.7509,157.967,mm" frameJoinStyle="miter" position="91.7509,157.967,mm" size="76.3382,23.9854,mm" zValue="15" excludeFromExports="0" groupUuid="" blendMode="0" keepLayerSet="true" mapFlags="0" visibility="1" frame="false" uuid="{e7e76e2f-393c-446b-8f4e-7a6dda1da0c4}" isTemporal="0" positionLock="false" id="" drawCanvasItems="true" followPresetName="" type="65639" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{e7e76e2f-393c-446b-8f4e-7a6dda1da0c4}" opacity="1" mapRotation="0" followPreset="false" background="true" labelMargin="0,mm">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmin="-13452679.58843683078885078" ymin="3294703.90490137413144112" ymax="4860245.29357231222093105" xmax="-8470043.05333990044891834"/>
+  <LayerSet>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\AURecent.shp|layername=AURecent" provider="ogr" name="AURecent">AURecent_51f402de_1a0b_4128_b5f0_e51f2a2f5ed4</Layer>
+   <Layer source="D:/Repositories/hadley-cell/GIS Data/USShort10.tif" provider="gdal" name="USShort10">USShort10_86756135_b848_4a65_b6ba_9ddca7162fe4</Layer>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\USRecent.shp|layername=USRecent" provider="ogr" name="USRecent">USRecent_b584bdd5_7433_4a87_91b9_67da7f529f4f</Layer>
+   <Layer source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dm%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=19&amp;zmin=0" provider="wms" name="Google Maps">Google_Maps_f5909963_ae29_4e43_ae24_47e05c29bedd</Layer>
+  </LayerSet>
+  <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+  <labelBlockingItems/>
+  <atlasClippingSettings clippingType="1" restrictLayers="0" enabled="0" forceLabelsInside="0">
+   <layersToClip/>
+  </atlasClippingSettings>
+  <itemClippingSettings clippingType="1" clipSource="" enabled="0" forceLabelsInside="0"/>
+ </LayoutItem>
+ <LayoutItem positionLock="false" wmsLegendHeight="25" wmsLegendWidth="50" blendMode="0" uuid="{85d68fdf-fa71-4eed-9ff4-4082c4b78854}" fontColor="#000000" minSymbolSize="0" columnSpace="2" rasterBorderColor="0,0,0,255" maxSymbolSize="0" outlineWidthM="0.3,mm" frameJoinStyle="miter" symbolHeight="4" symbolAlignment="1" id="" size="27.3,90,mm" itemRotation="0" templateUuid="{85d68fdf-fa71-4eed-9ff4-4082c4b78854}" rasterBorder="1" wrapChar="" positionOnPage="254.78,36.6603,mm" background="true" equalColumnWidth="0" excludeFromExports="0" visibility="1" frame="false" position="254.78,36.6603,mm" rasterBorderWidth="0" map_uuid="{2a904ec0-e2e3-4763-b706-df94d592886e}" zValue="14" columnCount="1" legendFilterByAtlas="0" groupUuid="" lineSpacing="1" referencePoint="0" title="Legend" type="65642" opacity="1" boxSpace="2" titleAlignment="1" resizeToContents="1" symbolWidth="7" splitLayer="0">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <styles>
+   <style alignment="1" marginBottom="3.5" name="title">
+    <styleFont description="MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0" style=""/>
+   </style>
+   <style alignment="1" marginTop="3" name="group">
+    <styleFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+   </style>
+   <style alignment="1" marginTop="3" name="subgroup">
+    <styleFont description="MS Shell Dlg 2,12,-1,5,50,0,0,0,0,0" style=""/>
+   </style>
+   <style alignment="1" marginTop="2.5" name="symbol">
+    <styleFont description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+   </style>
+   <style alignment="1" marginLeft="2" marginTop="2" name="symbolLabel">
+    <styleFont description="MS Shell Dlg 2,12,-1,5,50,0,0,0,0,0" style=""/>
+   </style>
+  </styles>
+  <layer-tree-group>
+   <customproperties/>
+   <layer-tree-layer providerKey="gdal" source="./GIS Data/USShort12.tif" patch_size="-1,-1" legend_exp="" name="USShort12" checked="Qt::Checked" expanded="0" id="USShort12_9a313b3e_5faa_488c_9111_e601e7871c4e" legend_split_behavior="0">
+    <customproperties>
+     <property value="USShort12" key="cached_name"/>
+    </customproperties>
+   </layer-tree-layer>
+   <custom-order enabled="0">
+    <item>USShort12_9a313b3e_5faa_488c_9111_e601e7871c4e</item>
+   </custom-order>
+  </layer-tree-group>
+ </LayoutItem>
+ <LayoutItem referencePoint="0" positionOnPage="174.349,157.967,mm" frameJoinStyle="miter" position="174.349,157.967,mm" size="76.3382,23.9854,mm" zValue="14" excludeFromExports="0" groupUuid="" blendMode="0" keepLayerSet="true" mapFlags="0" visibility="1" frame="false" uuid="{40715c33-629b-4ce1-8d90-5c3aed00b909}" isTemporal="0" positionLock="false" id="" drawCanvasItems="true" followPresetName="" type="65639" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{40715c33-629b-4ce1-8d90-5c3aed00b909}" opacity="1" mapRotation="0" followPreset="false" background="true" labelMargin="0,mm">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmin="-13452679.58843683078885078" ymin="3294703.90490137413144112" ymax="4860245.29357231222093105" xmax="-8470043.05333990044891834"/>
+  <LayerSet>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\AURecent.shp|layername=AURecent" provider="ogr" name="AURecent">AURecent_51f402de_1a0b_4128_b5f0_e51f2a2f5ed4</Layer>
+   <Layer source="D:/Repositories/hadley-cell/GIS Data/USShort11.tif" provider="gdal" name="USShort11">USShort11_ade3eab2_a7db_4b75_82e8_a23cad6199d7</Layer>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\USRecent.shp|layername=USRecent" provider="ogr" name="USRecent">USRecent_b584bdd5_7433_4a87_91b9_67da7f529f4f</Layer>
+   <Layer source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dm%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=19&amp;zmin=0" provider="wms" name="Google Maps">Google_Maps_f5909963_ae29_4e43_ae24_47e05c29bedd</Layer>
+  </LayerSet>
+  <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+  <labelBlockingItems/>
+  <atlasClippingSettings clippingType="1" restrictLayers="0" enabled="0" forceLabelsInside="0">
+   <layersToClip/>
+  </atlasClippingSettings>
+  <itemClippingSettings clippingType="1" clipSource="" enabled="0" forceLabelsInside="0"/>
+ </LayoutItem>
+ <LayoutItem labelText="1970 - Present United States Rainfall Trend" marginX="0" referencePoint="0" positionOnPage="8.47548,12.9539,mm" frameJoinStyle="miter" position="8.47548,12.9539,mm" size="242.212,11.1969,mm" zValue="13" excludeFromExports="0" groupUuid="" blendMode="0" visibility="1" frame="false" uuid="{9b560136-76a2-4fd4-b48c-bfb878d178ed}" valign="128" positionLock="false" id="" htmlState="0" type="65641" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{9b560136-76a2-4fd4-b48c-bfb878d178ed}" opacity="1" marginY="0" background="false" halign="4">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont description="MS Shell Dlg 2,24,-1,5,75,0,0,0,0,0,Bold" style="Bold"/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem referencePoint="0" positionOnPage="8.47548,36.6603,mm" frameJoinStyle="miter" position="8.47548,36.6603,mm" size="76.3382,23.9854,mm" zValue="13" excludeFromExports="0" groupUuid="" blendMode="0" keepLayerSet="true" mapFlags="0" visibility="1" frame="false" uuid="{80548f5c-4d0e-4c42-b8d0-7721078e8d29}" isTemporal="0" positionLock="false" id="" drawCanvasItems="true" followPresetName="" type="65639" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{80548f5c-4d0e-4c42-b8d0-7721078e8d29}" opacity="1" mapRotation="0" followPreset="false" background="true" labelMargin="0,mm">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmin="-13452679.58843683078885078" ymin="3294703.90490137413144112" ymax="4860245.29357231222093105" xmax="-8470043.05333990044891834"/>
+  <LayerSet>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\AURecent.shp|layername=AURecent" provider="ogr" name="AURecent">AURecent_51f402de_1a0b_4128_b5f0_e51f2a2f5ed4</Layer>
+   <Layer source="D:/Repositories/hadley-cell/GIS Data/USShort12.tif" provider="gdal" name="USShort12">USShort12_9a313b3e_5faa_488c_9111_e601e7871c4e</Layer>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\USRecent.shp|layername=USRecent" provider="ogr" name="USRecent">USRecent_b584bdd5_7433_4a87_91b9_67da7f529f4f</Layer>
+   <Layer source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dm%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=19&amp;zmin=0" provider="wms" name="Google Maps">Google_Maps_f5909963_ae29_4e43_ae24_47e05c29bedd</Layer>
+  </LayerSet>
+  <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+  <labelBlockingItems/>
+  <atlasClippingSettings clippingType="1" restrictLayers="0" enabled="0" forceLabelsInside="0">
+   <layersToClip/>
+  </atlasClippingSettings>
+  <itemClippingSettings clippingType="1" clipSource="" enabled="0" forceLabelsInside="0"/>
+ </LayoutItem>
+ <LayoutItem referencePoint="0" positionOnPage="174.349,117.849,mm" frameJoinStyle="miter" position="174.349,117.849,mm" size="76.3382,23.9854,mm" zValue="12" excludeFromExports="0" groupUuid="" blendMode="0" keepLayerSet="true" mapFlags="0" visibility="1" frame="false" uuid="{17192e7c-200b-4518-8eb4-b2661143aec0}" isTemporal="0" positionLock="false" id="" drawCanvasItems="true" followPresetName="" type="65639" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{17192e7c-200b-4518-8eb4-b2661143aec0}" opacity="1" mapRotation="0" followPreset="false" background="true" labelMargin="0,mm">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmin="-13452679.58843683078885078" ymin="3294703.90490137366577983" ymax="4860245.29357231222093105" xmax="-8470043.05333990044891834"/>
+  <LayerSet>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\AURecent.shp|layername=AURecent" provider="ogr" name="AURecent">AURecent_51f402de_1a0b_4128_b5f0_e51f2a2f5ed4</Layer>
+   <Layer source="D:/Repositories/hadley-cell/GIS Data/USShort8.tif" provider="gdal" name="USShort8">USShort8_218038d6_4c88_4d1f_98c9_7f36dfbd8764</Layer>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\USRecent.shp|layername=USRecent" provider="ogr" name="USRecent">USRecent_b584bdd5_7433_4a87_91b9_67da7f529f4f</Layer>
+   <Layer source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dm%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=19&amp;zmin=0" provider="wms" name="Google Maps">Google_Maps_f5909963_ae29_4e43_ae24_47e05c29bedd</Layer>
+  </LayerSet>
+  <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+  <labelBlockingItems/>
+  <atlasClippingSettings clippingType="1" restrictLayers="0" enabled="0" forceLabelsInside="0">
+   <layersToClip/>
+  </atlasClippingSettings>
+  <itemClippingSettings clippingType="1" clipSource="" enabled="0" forceLabelsInside="0"/>
+ </LayoutItem>
+ <LayoutItem referencePoint="0" positionOnPage="91.7509,117.849,mm" frameJoinStyle="miter" position="91.7509,117.849,mm" size="76.3382,23.9854,mm" zValue="11" excludeFromExports="0" groupUuid="" blendMode="0" keepLayerSet="true" mapFlags="0" visibility="1" frame="false" uuid="{3064b85b-224b-48ad-a965-255c45346a69}" isTemporal="0" positionLock="false" id="" drawCanvasItems="true" followPresetName="" type="65639" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{3064b85b-224b-48ad-a965-255c45346a69}" opacity="1" mapRotation="0" followPreset="false" background="true" labelMargin="0,mm">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmin="-13452679.58843683078885078" ymin="3294703.90490137413144112" ymax="4860245.29357231222093105" xmax="-8470043.05333990044891834"/>
+  <LayerSet>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\AURecent.shp|layername=AURecent" provider="ogr" name="AURecent">AURecent_51f402de_1a0b_4128_b5f0_e51f2a2f5ed4</Layer>
+   <Layer source="D:/Repositories/hadley-cell/GIS Data/USShort7.tif" provider="gdal" name="USShort7">USShort7_51705489_96b2_4287_a836_f471fc896926</Layer>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\USRecent.shp|layername=USRecent" provider="ogr" name="USRecent">USRecent_b584bdd5_7433_4a87_91b9_67da7f529f4f</Layer>
+   <Layer source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dm%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=19&amp;zmin=0" provider="wms" name="Google Maps">Google_Maps_f5909963_ae29_4e43_ae24_47e05c29bedd</Layer>
+  </LayerSet>
+  <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+  <labelBlockingItems/>
+  <atlasClippingSettings clippingType="1" restrictLayers="0" enabled="0" forceLabelsInside="0">
+   <layersToClip/>
+  </atlasClippingSettings>
+  <itemClippingSettings clippingType="1" clipSource="" enabled="0" forceLabelsInside="0"/>
+ </LayoutItem>
+ <LayoutItem referencePoint="0" positionOnPage="8.47548,117.849,mm" frameJoinStyle="miter" position="8.47548,117.849,mm" size="76.3382,23.9854,mm" zValue="10" excludeFromExports="0" groupUuid="" blendMode="0" keepLayerSet="false" mapFlags="0" visibility="1" frame="false" uuid="{b8c9fdf9-10be-460e-a6a8-9466df8eddb5}" isTemporal="0" positionLock="false" id="" drawCanvasItems="true" followPresetName="" type="65639" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{b8c9fdf9-10be-460e-a6a8-9466df8eddb5}" opacity="1" mapRotation="0" followPreset="false" background="true" labelMargin="0,mm">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmin="-13452679.58843683078885078" ymin="3294703.90490137413144112" ymax="4860245.29357231222093105" xmax="-8470043.05333990044891834"/>
+  <LayerSet/>
+  <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+  <labelBlockingItems/>
+  <atlasClippingSettings clippingType="1" restrictLayers="0" enabled="0" forceLabelsInside="0">
+   <layersToClip/>
+  </atlasClippingSettings>
+  <itemClippingSettings clippingType="1" clipSource="" enabled="0" forceLabelsInside="0"/>
+ </LayoutItem>
+ <LayoutItem referencePoint="0" positionOnPage="174.349,77.4639,mm" frameJoinStyle="miter" position="174.349,77.4639,mm" size="76.3382,23.9854,mm" zValue="9" excludeFromExports="0" groupUuid="" blendMode="0" keepLayerSet="true" mapFlags="0" visibility="1" frame="false" uuid="{d295c570-c3bf-4bc8-ae1f-f5f489227a9d}" isTemporal="0" positionLock="false" id="" drawCanvasItems="true" followPresetName="" type="65639" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{d295c570-c3bf-4bc8-ae1f-f5f489227a9d}" opacity="1" mapRotation="0" followPreset="false" background="true" labelMargin="0,mm">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmin="-13452679.58843683078885078" ymin="3294703.90490137413144112" ymax="4860245.29357231222093105" xmax="-8470043.05333990044891834"/>
+  <LayerSet>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\AURecent.shp|layername=AURecent" provider="ogr" name="AURecent">AURecent_51f402de_1a0b_4128_b5f0_e51f2a2f5ed4</Layer>
+   <Layer source="D:/Repositories/hadley-cell/GIS Data/USShort6.tif" provider="gdal" name="USShort6">USShort6_b8a736de_ebac_457c_b5ba_293787d6fa97</Layer>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\USRecent.shp|layername=USRecent" provider="ogr" name="USRecent">USRecent_b584bdd5_7433_4a87_91b9_67da7f529f4f</Layer>
+   <Layer source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dm%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=19&amp;zmin=0" provider="wms" name="Google Maps">Google_Maps_f5909963_ae29_4e43_ae24_47e05c29bedd</Layer>
+  </LayerSet>
+  <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+  <labelBlockingItems/>
+  <atlasClippingSettings clippingType="1" restrictLayers="0" enabled="0" forceLabelsInside="0">
+   <layersToClip/>
+  </atlasClippingSettings>
+  <itemClippingSettings clippingType="1" clipSource="" enabled="0" forceLabelsInside="0"/>
+ </LayoutItem>
+ <LayoutItem referencePoint="0" positionOnPage="91.7509,77.4639,mm" frameJoinStyle="miter" position="91.7509,77.4639,mm" size="76.3382,23.9854,mm" zValue="5" excludeFromExports="0" groupUuid="" blendMode="0" keepLayerSet="true" mapFlags="0" visibility="1" frame="false" uuid="{c9598b66-abbd-4b86-ac2f-8543c93cc12e}" isTemporal="0" positionLock="false" id="" drawCanvasItems="true" followPresetName="" type="65639" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{c9598b66-abbd-4b86-ac2f-8543c93cc12e}" opacity="1" mapRotation="0" followPreset="false" background="true" labelMargin="0,mm">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmin="-13452679.58843683078885078" ymin="3294703.90490137413144112" ymax="4860245.29357231222093105" xmax="-8470043.05333990044891834"/>
+  <LayerSet>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\AURecent.shp|layername=AURecent" provider="ogr" name="AURecent">AURecent_51f402de_1a0b_4128_b5f0_e51f2a2f5ed4</Layer>
+   <Layer source="D:/Repositories/hadley-cell/GIS Data/USShort4.tif" provider="gdal" name="USShort4">USShort4_325f4640_bfc6_4006_a887_0a1313e278af</Layer>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\USRecent.shp|layername=USRecent" provider="ogr" name="USRecent">USRecent_b584bdd5_7433_4a87_91b9_67da7f529f4f</Layer>
+   <Layer source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dm%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=19&amp;zmin=0" provider="wms" name="Google Maps">Google_Maps_f5909963_ae29_4e43_ae24_47e05c29bedd</Layer>
+  </LayerSet>
+  <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+  <labelBlockingItems/>
+  <atlasClippingSettings clippingType="1" restrictLayers="0" enabled="0" forceLabelsInside="0">
+   <layersToClip/>
+  </atlasClippingSettings>
+  <itemClippingSettings clippingType="1" clipSource="" enabled="0" forceLabelsInside="0"/>
+ </LayoutItem>
+ <LayoutItem referencePoint="0" positionOnPage="8.47548,77.4639,mm" frameJoinStyle="miter" position="8.47548,77.4639,mm" size="76.3382,23.9854,mm" zValue="4" excludeFromExports="0" groupUuid="" blendMode="0" keepLayerSet="true" mapFlags="0" visibility="1" frame="false" uuid="{95f6c3bd-285e-4e33-9cdd-bdb8e11b25fc}" isTemporal="0" positionLock="false" id="" drawCanvasItems="true" followPresetName="" type="65639" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{95f6c3bd-285e-4e33-9cdd-bdb8e11b25fc}" opacity="1" mapRotation="0" followPreset="false" background="true" labelMargin="0,mm">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmin="-13452679.58843683078885078" ymin="3294703.90490137413144112" ymax="4860245.29357231222093105" xmax="-8470043.05333990044891834"/>
+  <LayerSet>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\AURecent.shp|layername=AURecent" provider="ogr" name="AURecent">AURecent_51f402de_1a0b_4128_b5f0_e51f2a2f5ed4</Layer>
+   <Layer source="D:/Repositories/hadley-cell/GIS Data/USShort3.tif" provider="gdal" name="USShort3">USShort3_3db553ef_6ce5_45f1_8017_15503f6531e2</Layer>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\USRecent.shp|layername=USRecent" provider="ogr" name="USRecent">USRecent_b584bdd5_7433_4a87_91b9_67da7f529f4f</Layer>
+   <Layer source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dm%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=19&amp;zmin=0" provider="wms" name="Google Maps">Google_Maps_f5909963_ae29_4e43_ae24_47e05c29bedd</Layer>
+  </LayerSet>
+  <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+  <labelBlockingItems/>
+  <atlasClippingSettings clippingType="1" restrictLayers="0" enabled="0" forceLabelsInside="0">
+   <layersToClip/>
+  </atlasClippingSettings>
+  <itemClippingSettings clippingType="1" clipSource="" enabled="0" forceLabelsInside="0"/>
+ </LayoutItem>
+ <LayoutItem referencePoint="0" positionOnPage="174.349,36.6603,mm" frameJoinStyle="miter" position="174.349,36.6603,mm" size="76.3382,23.9854,mm" zValue="2" excludeFromExports="0" groupUuid="" blendMode="0" keepLayerSet="true" mapFlags="0" visibility="1" frame="false" uuid="{937fdbf9-c690-4e17-9579-b8a69f2b2818}" isTemporal="0" positionLock="false" id="" drawCanvasItems="true" followPresetName="" type="65639" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{937fdbf9-c690-4e17-9579-b8a69f2b2818}" opacity="1" mapRotation="0" followPreset="false" background="true" labelMargin="0,mm">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmin="-13452679.58843683078885078" ymin="3294703.90490137413144112" ymax="4860245.29357231222093105" xmax="-8470043.05333990044891834"/>
+  <LayerSet>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\AURecent.shp|layername=AURecent" provider="ogr" name="AURecent">AURecent_51f402de_1a0b_4128_b5f0_e51f2a2f5ed4</Layer>
+   <Layer source="D:/Repositories/hadley-cell/GIS Data/USShort2.tif" provider="gdal" name="USShort2">USShort2_b24ff1fa_d7a0_40c6_b396_2f797f1ebea0</Layer>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\USRecent.shp|layername=USRecent" provider="ogr" name="USRecent">USRecent_b584bdd5_7433_4a87_91b9_67da7f529f4f</Layer>
+   <Layer source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dm%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=19&amp;zmin=0" provider="wms" name="Google Maps">Google_Maps_f5909963_ae29_4e43_ae24_47e05c29bedd</Layer>
+  </LayerSet>
+  <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+  <labelBlockingItems/>
+  <atlasClippingSettings clippingType="1" restrictLayers="0" enabled="0" forceLabelsInside="0">
+   <layersToClip/>
+  </atlasClippingSettings>
+  <itemClippingSettings clippingType="1" clipSource="" enabled="0" forceLabelsInside="0"/>
+ </LayoutItem>
+ <LayoutItem referencePoint="0" positionOnPage="91.7509,36.6603,mm" frameJoinStyle="miter" position="91.7509,36.6603,mm" size="76.3383,23.9854,mm" zValue="1" excludeFromExports="0" groupUuid="" blendMode="0" keepLayerSet="true" mapFlags="0" visibility="1" frame="false" uuid="{2a904ec0-e2e3-4763-b706-df94d592886e}" isTemporal="0" positionLock="false" id="" drawCanvasItems="true" followPresetName="" type="65639" itemRotation="0" outlineWidthM="0.3,mm" templateUuid="{2a904ec0-e2e3-4763-b706-df94d592886e}" opacity="1" mapRotation="0" followPreset="false" background="true" labelMargin="0,mm">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmin="-13452679.58843683078885078" ymin="3294703.90490137413144112" ymax="4860245.29357231222093105" xmax="-8470043.05333990044891834"/>
+  <LayerSet>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\AURecent.shp|layername=AURecent" provider="ogr" name="AURecent">AURecent_51f402de_1a0b_4128_b5f0_e51f2a2f5ed4</Layer>
+   <Layer source="D:/Repositories/hadley-cell/GIS Data/USShort1.tif" provider="gdal" name="USShort1">USShort1_b9422d35_d7c9_43bf_8bff_b42687512f03</Layer>
+   <Layer source="D:\Repositories\hadley-cell\QGIS Working\USRecent.shp|layername=USRecent" provider="ogr" name="USRecent">USRecent_b584bdd5_7433_4a87_91b9_67da7f529f4f</Layer>
+   <Layer source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dm%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=19&amp;zmin=0" provider="wms" name="Google Maps">Google_Maps_f5909963_ae29_4e43_ae24_47e05c29bedd</Layer>
+  </LayerSet>
+  <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+  <labelBlockingItems/>
+  <atlasClippingSettings clippingType="1" restrictLayers="0" enabled="0" forceLabelsInside="0">
+   <layersToClip/>
+  </atlasClippingSettings>
+  <itemClippingSettings clippingType="1" clipSource="" enabled="0" forceLabelsInside="0"/>
+ </LayoutItem>
+ <customproperties>
+  <property value="png" key="atlasRasterFormat"/>
+ </customproperties>
+ <Atlas filterFeatures="0" coverageLayer="" pageNameExpression="" filenamePattern="'output_'||@atlas_featurenumber" enabled="0" hideCoverage="0" sortFeatures="0"/>
+</Layout>

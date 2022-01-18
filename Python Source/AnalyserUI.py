@@ -1,3 +1,4 @@
+import numpy
 import pymannkendall
 import pandas
 import geopandas
@@ -7,7 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 
 from shapely.geometry import Point
-from numpy import reshape, linspace
+from numpy import NAN, NaN, reshape, linspace
 from datetime import datetime
 
 def main():
@@ -29,6 +30,11 @@ def main():
         coords_in_file = False
     else:
         coords_in_file = True
+
+    if input("Inches per decade? ").upper() in ["N", "NO"]:
+        inchesperdecade = False
+    else:
+        inchesperdecade = True
     
     # Set file names and output files
     file_time = datetime.now().strftime("%Y-%m-%d_%H%M%S")
@@ -72,7 +78,7 @@ def main():
         content = pandas.Series(content.values, index = dates)
 
         # Reshape the time series into a matrix with months as columns
-        monthly_array = content.values                              # Create an array with the values from the current data frame column
+        monthly_array = content.values                        # Create an array with the values from the current data frame column
         monthly_array = reshape(monthly_array, (-1, 12)).T    # Reshape to 12 x N, then transpose so each array index corresponds with a month
 
         # Create temporary columns for storing into the new data frame
@@ -81,10 +87,24 @@ def main():
 
         # For each column in the array, run the tests
         for month in monthly_array:
-            
+
+            print(month)
+            print(numpy.isnan(month).all())
+
+            if numpy.isnan(month).all():
+                nan_array = numpy.empty((1,12))
+                nan_array[:] = numpy.nan
+                sens_temp.append(nan_array)
+                mk_temp.append(nan_array)
+                continue
+
             # Append the desired test results to the sens_temporary column
             sens_result, mk_result = run_tests(month, mk_significance_alpha)
-            sens_temp.append(sens_result.slope)
+            
+            if inchesperdecade:
+                sens_result_slope = sens_result.slope / 25.4 * 10
+
+            sens_temp.append(sens_result_slope)
             mk_temp.append(mk_result.trend)
 
         # Add each station to the data frames
@@ -127,8 +147,8 @@ def main():
     ax.set_ylim(miny, maxy)
     ax.set_facecolor("#d1e0e6")
 
-    world = geopandas.read_file("GISData\\ne_10m_admin_0_countries.shp") # geopandas.datasets.get_path('naturalearth_lowres')
-    us_states = geopandas.read_file("GISData\\cb_2018_us_state_500k.shp")
+    world = geopandas.read_file("GIS Data\\ne_10m_admin_0_countries.shp") # geopandas.datasets.get_path('naturalearth_lowres')
+    us_states = geopandas.read_file("GIS Data\\cb_2018_us_state_500k.shp")
     mask = us_states[(us_states.NAME!="Alaska")]
 
     world.to_csv("output.csv")
